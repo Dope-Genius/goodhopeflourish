@@ -13,20 +13,32 @@
   <title>GoodHope Flourish</title>
 </head>
 <body>
-  <header>
+  <header class="header">
     <nav>
       <div class="logo"><img src="images/goodhope logo.jpg" alt="goodhope logo"></div>
       <div class="menu"><i class="fas fa-bars"></i></div>
-      <div class="nav-links">
+      <div  class="nav-links" id="navlinks">
         <ul>
           <li ><a href="#" class="active">Home</a></li>
           <li><a href="../goodhopeflourish/AboutUs.html">About</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
           <button class="btn btn--donate">DONATE</button>
+          <li><a href="login.html">Login</a></li>
+
         </ul>
       </div>
     </nav>
+    <div class="mobile-nav" id="navlinks">
+      <ul>
+        <li ><a href="#" class="active">Home</a></li>
+        <li><a href="../goodhopeflourish/AboutUs.html">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <button class="btn btn--donate">DONATE</button>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
   </header>
 
   <section class="billboard">
@@ -40,16 +52,17 @@
   <section class="about-us pad">
     <div class="about--content">
       <p class="small-heading">GOODHOPE FLOURISH FOUNDATION</p>
-      <h2 class="main-heading">About US</h2>
+      <h2 class="main-heading">About Us</h2>
       <p class="para">
         The conceptualization and consequent birth of GoodHope Flourish Foundation(GHFF)
-        emanated from the raging desire to  improve the standard of living of our people, especially the indigent,  through quality Education, Accessible Health Care, Reduction of Gender- Based Violence and Maternal/Infant mortality, Enlightenment on Girl-Child Development, Engaging people with Special needs, as well as  Persons Living with Disabilities(PLWD), reducing unemployment to its barest minimum, among others. 
+        emanated from the raging desire to  improve the standard of living of our people, especially the indigent,  through quality Education, Accessible Health Care, Reduction of Gender- Based Violence and Maternal/Infant mortality, Enlightenment on Girl-Child Development, Engaging people with Special needs, as well as  Persons Living with Disabilities (PLWD), reducing unemployment to its barest minimum, among others. 
         
         <!-- Our advocacy is geared towards social, educational and economic empowerment by way of Capacity-  Building, to foster ownership among all individuals in our state, and by extension, our country as a whole. This would positively impact our society, as accountability mechanisms would be put in place for adequate checks and balances.
         
         We are committed to fulfilling our mandate through solid affiliations and partnerships, in line with our goals, objectives and vision for the Foundation, to inspire hope  and make life worth living and flourishing for all and sundry. -->
       </p>
-      <button class="btn btn--donate">Read More</button>
+      <a href="AboutUs.html" class="btn btn--donate">Read More</a>
+      <!-- <button class="btn btn--donate">Read More</button> -->
     </div>
 
     <div class="about--image">
@@ -247,4 +260,5 @@
   </footer>
   <div class="rights center">Copyright ©2020 GoodHope Flourish Foundation All rights reserved</div>
 </body>
+<script src="app.js"></script>
 </html>

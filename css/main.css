@@ -19,6 +19,12 @@ body {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  margin-top: .5rem;
+}
+
 .center {
   text-align: center;
 }
@@ -39,14 +45,9 @@ body {
 
 /* styling for nav bar */
 
-nav {
+header {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: .2rem 2.5rem;
-  padding-top: .5rem;
   font-size: 1rem;
   position: fixed;
   width:100%;
@@ -54,6 +55,33 @@ nav {
   top: 0;
   z-index: 100;
   border-bottom: 1px solid var(--green);
+  height: 5.5rem;
+  overflow: hidden;
+}
+
+.height {
+  height: fit-content;
+  transition: height 3s;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .3rem 2.5rem;
+  padding-top: 1rem;
+  /* border-bottom: 1px solid var(--green); */
+  width: 100%;
+}
+
+.mobile-nav {
+  text-align: center;
+  padding: .5rem .5rem;
+}
+
+.mobile-nav li {
+  list-style-type: none; 
+  padding: .5rem 0;
 }
 
 .logo {
@@ -109,8 +137,7 @@ ul .active {
 
 /* styling for billboard */
 .billboard {
-  background-image: url("../images/little_girl_posing.jpg");
-  height: 70vh;
+  background: linear-gradient(to right, rgba(100, 110, 112, 0.52),  rgba(106, 194, 43, 0.3)), url("../images/little_girl_posing.jpg") left 40% bottom 60%/cover no-repeat;  height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -160,6 +187,10 @@ ul .active {
 .about-us {
   display: flex;
   justify-content:space-between;
+}
+
+.about-us .para {
+  text-align: justify;
 }
 
 .small-heading {
@@ -290,7 +321,7 @@ ul .active {
   color: white;
 }
 
-/* styling foe latest news from blog */
+/* styling for latest news from blog */
 
 .news-col {
   display: flex;
@@ -455,6 +486,7 @@ footer {
 
   .nav-links {
     display: none;
+    align-self: baseline;
   }
 
   .menu {
@@ -465,6 +497,15 @@ footer {
     font-size: 1.6rem;
     color: var(--green);
   }
+
+  .nav-links li {
+    display: block;
+  }
+
+  .mobile-nav {
+    /* position: absolute; */
+  }
+
 
   .billboard {
   height: 50vh;
