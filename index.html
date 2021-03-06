@@ -4,64 +4,74 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="images/goodhope logo.jpg">
+  <!-- <link rel="shortcut icon" href="images/goodhope logo.jpg"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slideH.css">
   <script src="https://kit.fontawesome.com/d206b6bfc8.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (5)/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (5)/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (5)/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io (5)/site.webmanifest">
   <title>GoodHope Flourish</title>
 </head>
 <body>
   <header class="header">
     <nav>
-      <div class="logo"><img src="images/goodhope logo.jpg" alt="goodhope logo"></div>
+      <a href="index.html"><div class="logo"><img src="images/goodhope logo.jpg" alt="goodhope logo"></div></a>
       <div class="menu"><i class="fas fa-bars"></i></div>
       <div  class="nav-links" id="navlinks">
         <ul>
-          <li ><a href="#" class="active">Home</a></li>
+          <li ><a href="index.html" class="active">Home</a></li>
           <li><a href="../goodhopeflourish/AboutUs.html">About</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <button class="btn btn--donate">DONATE</button>
-          <li><a href="login.html">Login</a></li>
+          <a href="#" class="btn btn--donate">DONATE</a>
+          <li><a href="signin.html">Login</a></li>
 
         </ul>
       </div>
     </nav>
     <div class="mobile-nav" id="navlinks">
       <ul>
-        <li ><a href="#" class="active">Home</a></li>
-        <li><a href="../goodhopeflourish/AboutUs.html">About</a></li>
-        <li><a href="#">Blog</a></li>
+        <li ><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <button class="btn btn--donate">DONATE</button>
-        <li><a href="login.html">Login</a></li>
+        <a href="#" class="btn btn--donate">DONATE</a>
+        <li><a href="signin.html">Login</a></li>
       </ul>
     </div>
   </header>
 
   <section class="billboard">
+    <div class="slide">
+      <ul class="cb-slideshow">
+        <li><span>Image 01</span></li>
+        <li><span>Image 02</span></li>
+        <li><span>Image 03</span></li>
+        <li><span>image 04</span></li>
+      </ul>
+    </div>
+
     <div class="billboard--content">
       <h1>GOODHOPE FLOURISH FOUNDATION</h1>
       <h2> <span class="light-text">Inspiring Hope</span>  <br> Flourishing Lives...</h2>
-      <button class="btn btn--blue">JOIN US</button>
+      <a href="#" class="btn btn--donate">DONATE</a>
     </div>
   </section>
 
   <section class="about-us pad">
     <div class="about--content">
-      <p class="small-heading">GOODHOPE FLOURISH FOUNDATION</p>
+      <!-- <p class="small-heading">GOODHOPE FLOURISH FOUNDATION</p> -->
       <h2 class="main-heading">About Us</h2>
       <p class="para">
         The conceptualization and consequent birth of GoodHope Flourish Foundation(GHFF)
         emanated from the raging desire to  improve the standard of living of our people, especially the indigent,  through quality Education, Accessible Health Care, Reduction of Gender- Based Violence and Maternal/Infant mortality, Enlightenment on Girl-Child Development, Engaging people with Special needs, as well as  Persons Living with Disabilities (PLWD), reducing unemployment to its barest minimum, among others. 
-        
-        <!-- Our advocacy is geared towards social, educational and economic empowerment by way of Capacity-  Building, to foster ownership among all individuals in our state, and by extension, our country as a whole. This would positively impact our society, as accountability mechanisms would be put in place for adequate checks and balances.
-        
-        We are committed to fulfilling our mandate through solid affiliations and partnerships, in line with our goals, objectives and vision for the Foundation, to inspire hope  and make life worth living and flourishing for all and sundry. -->
       </p>
-      <a href="AboutUs.html" class="btn btn--donate">Read More</a>
+      <a href="about.html" class="btn btn--donate">Read More</a>
       <!-- <button class="btn btn--donate">Read More</button> -->
     </div>
 
@@ -134,7 +144,7 @@
   <section class="statistics pad-x">
     <div class="stat--text">
       <p>We are on a mission to help</p>
-      <button class="btn btn--donate">Donate</button>
+      <a href="#" class="btn btn--donate">DONATE</a>
     </div>
 
     <div class="stats">
@@ -159,30 +169,30 @@
     <h2 class="main-heading">Latest News from our Blog</h2>
     <div class="news-col">
       <div class="news">
-        <div class="news--image"></div>
+        <div class="news--image"><img src="images/woman_carrying_child.jpg" alt=""></div>
         <div class="news--text">
-          <div class="text--heading">New Born Babies</div>
-          <div class="text--para">By providing basic necessities there is hope for every baby.</div>
+          <h3 class="text--heading">A Visit to the Federal Medical Center</h3>
+          <div class="text--para">Her Excellency, Barr. (Mrs) Chioma Uzodimma took a personal tour of some of these facilities...</div>
         </div>
         <div class="news--more">
           <p>28/02/2020</p>
-          <button class="btn btn--donate">View More</button>
+          <a href="blog.html" class="btn btn--donate">Read More</a>
         </div>
       </div>
 
       <div class="news">
-        <div class="news--image"></div>
+        <div class="news--image"><img src="images/2 blog.jpeg" alt=""></div>
         <div class="news--text">
-          <div class="text--heading">Helping New Mothers</div>
-          <div class="text--para">By providing basic necessities there is hope for every baby.</div>
+          <h3 class="text--heading">Visit to the Nigeria Correctional service (NCS) centre</h3>
+          <div class="text--para">Our rehabilitation centres must continue to live up to their core mandate which...</div>
         </div>
         <div class="news--more">
           <p>28/02/2020</p>
-          <button class="btn btn--donate">View More</button>
+          <a href="blog.html" class="btn btn--donate">Read More</a>
         </div>
       </div>
 
-      <div class="news">
+      <!-- <div class="news">
         <div class="news--image"></div>
         <div class="news--text">
           <div class="text--heading">Providing Necessities</div>
@@ -190,9 +200,9 @@
         </div>
         <div class="news--more">
           <p>28/02/2020</p>
-          <button class="btn btn--donate">View More</button>
+          <a href="#" class="btn btn--donate">Read More</a>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
